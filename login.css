@@ -1,0 +1,237 @@
+/* Reset some default browser styling for consistency */
+body {
+    padding: 0%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(bg.jpg);
+  }
+  
+  .navbar {
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    background-color: rgba(36, 35, 35, 0.932);
+    display: flex;
+    align-items: center;
+    padding: 5px 5px;
+    z-index: 1000;
+    transition: background 0.3s ease;
+    margin-top: 0; 
+  }
+  
+  .navbar.scrolled {
+    background: linear-gradient(90deg, rgb(25, 156, 145), rgb(53, 130, 153));
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  .nav-link {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    justify-content: center;
+  }
+  
+  .nav-link li {
+    margin-left: 20px;
+  }
+  .navbar a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .navbar a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  .navbar.scrolled .nav-link a {
+    color: white;
+  }
+  
+  .navbar.scrolled .nav-link a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  .search-box {
+    position: relative;
+  }
+  
+  .search-box input {
+    border: 2px solid black;
+    padding: 8px 15px;
+    border-radius: 20px;
+    outline: none;
+    width: 200px;
+    transition: width 0.3s ease;
+  }
+  
+  .search-box input:focus {
+    width: 300px;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-link {
+        flex-direction: column;
+    }
+  
+    .nav-link li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+  
+    .search-box input {
+        width: 100%;
+    }
+  
+    .search-box input:focus {
+        width: 100%;
+    }
+  }
+
+  /* text part*/
+  .shop-info {
+    margin-top: 50%;
+    margin-right: auto;
+    margin-left: 15%;
+    margin-bottom: auto;
+    color: #d4c5c5;
+    margin-top: 20px;
+}
+
+.shop-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    margin-top: 200px;
+    animation: fadeIn 2s ease-in-out 0.5s; /* Add delay for h2 */
+    animation-fill-mode: both;
+}
+
+.shop-info p {
+    font-size: 1.2rem;
+    color: #0bc57e;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out 1s; /* Add delay for p */
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Container to center the login content */
+.login-container {
+    background-color: #032730e5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin-right: auto; /* Push to the right */
+    margin-left: 60%; /* Adjust the right margin to your preference */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Styling the branding area */
+.brand h1 {
+    font-size: 2rem;
+    color: #d4c5c5;
+    margin-bottom: 20px;
+}
+
+/* Styling the form and inputs */
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #d4c5c5;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Styling the login button */
+.login-btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Styling the extra links */
+.extra-links {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.extra-links a {
+    color: #007BFF;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.extra-links a:hover {
+    text-decoration: underline;
+}
+
+/* Styling the social media icons */
+#ul {
+    margin-top: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+#ul i {
+    font-size: 1.5rem;
+    color: #007BFF;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#ul i:hover {
+    color: #0056b3;
+}
